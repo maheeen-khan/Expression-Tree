@@ -26,7 +26,7 @@ TreeNode* createNode(char data) {
     return newNode;
 }
 
-TreeNode* infix_Tree(char* prefixExpression) {
+TreeNode* prefix_Tree(char* prefixExpression) {
 	
     stack<TreeNode*> st;
     int length = strlen(prefixExpression);
@@ -62,7 +62,7 @@ void inorderTraversal(TreeNode* root) {
 int main() {
 	
      char* prefixExpression = "*+//ABF-CDE";
-    TreeNode* root = infix_Tree(prefixExpression);
+    TreeNode* root = prefix_Tree(prefixExpression);
 
     cout << "\tPrefix Expression to Expression tree:";
     cout<<"\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
